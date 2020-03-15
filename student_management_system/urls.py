@@ -17,10 +17,17 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
 
-from student_management_app import views
+from student_management_app import views, HodViews, StudentViews, StaffViews
 from student_management_system import settings
 
 urlpatterns = [
     path('demo',views.showDemoPage),
     path('admin/', admin.site.urls),
+    path('',views.redirectStudent),
+#     HOD URL Path
+    path('login_admin',HodViews.adminLogin),
+#     Student URL Path
+    path('login_student',StudentViews.StudentLogin),
+#     Staff URL Path
+    path('login_staff',StaffViews.StaffLogin)
 ]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)+static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)

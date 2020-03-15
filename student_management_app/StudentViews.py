@@ -1,9 +1,10 @@
-from django.http import HttpResponseRedirect
+from django.http import HttpResponse
 from django.shortcuts import render
 
 # Create your views here.
 def showDemoPage(request):
     return render(request,"demo.html")
 
-def redirectStudent(request):
-    return HttpResponseRedirect("/login_student")
+
+def StudentLogin(request):
+    return render(request,"student_login.html")
