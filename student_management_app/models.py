@@ -50,9 +50,6 @@ class Students(models.Model):
     course_id=models.ForeignKey(Courses,on_delete=models.DO_NOTHING)
     created_at=models.DateTimeField(auto_now_add=True)
     updated_at=models.DateTimeField(auto_now_add=True)
-    #Added Two Fields More So New Student Go in New Session
-    session_start=models.DateField()
-    session_end=models.DateField()
     objects = models.Manager()
 
 class Attendance(models.Model):
