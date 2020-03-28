@@ -21,7 +21,7 @@ student_management_system_in_django
 
 
 <h2>Manage Subject Page</h2>
-<img src="https://github.com/hackstarsj/student_management_system_in_django/blob/master/screenshots/manange_subject.PNG" alt="Add Subject">
+<img src="https://github.com/hackstarsj/student_management_system_in_django/blob/master/screenshots/manage_subject.PNG" alt="Add Subject">
 
 
 <h2>Manage Course Page</h2>
