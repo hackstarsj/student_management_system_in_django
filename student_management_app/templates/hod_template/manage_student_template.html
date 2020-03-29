@@ -55,13 +55,13 @@ Manage Student
                       <td>{{ student.admin.email }}</td>
                       <td>{{ student.address }}</td>
                       <td>{{ student.gender }}</td>
-                      <td>{{ student.profile_pic }}</td>
+                      <td><img src="{{ student.profile_pic }}" style="width:100px"/></td>
                       <td>{{ student.session_start_year }}</td>
                       <td>{{ student.session_end_year }}</td>
                       <td>{{ student.course_id.course_name }}</td>
-                      <td>{{ staff.admin.last_login }}</td>
-                      <td>{{ staff.admin.date_joined }}</td>
-                      <td><a href="/edit_student/{{ staff.admin.id }}" class="btn btn-success">Edit</a></td>
+                      <td>{{ student.admin.last_login }}</td>
+                      <td>{{ student.admin.date_joined }}</td>
+                      <td><a href="/edit_student/{{ student.admin.id }}" class="btn btn-success">Edit</a></td>
                     </tr>
                   {% endfor %}
                   </tbody>
