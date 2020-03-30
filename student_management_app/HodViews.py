@@ -7,8 +7,7 @@ from student_management_app.models import CustomUser, Staffs, Courses, Subjects,
 
 
 def admin_home(request):
-    user=request.user
-    return render(request,"hod_template/home_content.html",{"user":user})
+    return render(request,"hod_template/home_content.html")
 
 def add_staff(request):
     return render(request,"hod_template/add_staff_template.html")
